@@ -13,27 +13,63 @@
     <title>Форма регистрации</title>
   </head>
   <body>
-    <main class="main">
-      <header class="header">
-        <h1 class="header__title">Регистрация</h1>
-      </header>
-      <article class="form">
-        <div class="form__left">
-          <input type="text" />
-          <input type="text" />
+    <div class="center">
+      <main class="main">
+        <header class="header">
+          <h1 class="header__title">Регистрация</h1>
+        </header>
+
+        <article class="form">
+          <p class="form__text">Заполните Ваши данные</p>
+          <div class="form__box">
+            <div class="form__left">
+              <input class="input" type="text" placeholder="Имя" />
+              <input class="input" type="password" placeholder="Пароль" />
+            </div>
+            <div class="form__right">
+              <input class="input" type="text" placeholder="Email" />
+              <select class="selector" name="" id="">
+                <option value="">Должность</option>
+                <option value="1">Должность 1</option>
+                <option value="2">Должность 2</option>
+              </select>
+              <input
+                class="input"
+                type="password"
+                placeholder="Повторите пароль"
+              />
+            </div>
+          </div>
+        </article>
+        <div class="footer">
+          <div class="footer__top">
+            <label class="checkbox-google">
+              <input type="checkbox" />
+              <span class="checkbox-google-switch"></span>
+            </label>
+            <label style="font-weight: 500"
+              >Хотите чтобы Ваш профиль видели другие участники платформы?<br />
+              <span style="font-weight: 400; color: rgb(105, 105, 119)"
+                >Включает профиль для просмотра другими пользователями по
+                ссылке</span
+              >
+            </label>
+          </div>
+          <div class="footer__bottom">
+            <div>
+              <input type="checkbox" id="horns" checked name="horns" />
+              <label for="horns"
+                >Регистрируясь, Вы соглашаетесь с
+                <a href="">политикой конфиденциальности</a><br />
+                и обработкой
+                <a href="">персональных данных</a>
+              </label>
+            </div>
+
+            <button>Зарегистрироваться</button>
+          </div>
         </div>
-        <div class="form__right">
-          <input type="text" />
-          <select name="" id=""></select>
-          <input type="text" />
-        </div>
-      </article>
-      <div class="footer">
-        <div class="footer__top">
-            <input type="checkbox">
-        </div>
-        <div class="footer__bottom"></div>
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
 </html>
