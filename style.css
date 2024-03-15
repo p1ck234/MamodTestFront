@@ -131,6 +131,22 @@ body {
   border: none;
 }
 
+.error {
+  background-color: red;
+}
+
+.error__button {
+  background-color: dimgray;
+}
+
+.remove-form-button {
+  background-color: gray;
+}
+
+.hidden {
+  display: none;
+}
+
 .checkbox-google {
   display: inline-block;
   height: 28px;

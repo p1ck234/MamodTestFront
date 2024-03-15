@@ -23,17 +23,28 @@
           <p class="form__text">Заполните Ваши данные</p>
           <div class="form__box">
             <div class="form__left">
-              <input class="input" type="text" placeholder="Имя" />
-              <input class="input" type="password" placeholder="Пароль" />
+              <input
+                id="input-name"
+                class="input"
+                type="text"
+                placeholder="Имя"
+              />
+              <input
+                id="password"
+                class="input"
+                type="password"
+                placeholder="Пароль"
+              />
             </div>
             <div class="form__right">
-              <input class="input" type="text" placeholder="Email" />
+              <input id="email" class="input" type="text" placeholder="Email" />
               <select class="selector" name="" id="">
                 <option value="">Должность</option>
                 <option value="1">Должность 1</option>
                 <option value="2">Должность 2</option>
               </select>
               <input
+                id="repassword"
                 class="input"
                 type="password"
                 placeholder="Повторите пароль"
@@ -66,10 +77,13 @@
               </label>
             </div>
 
-            <button>Зарегистрироваться</button>
+            <button id="btn" onclick="regestration()">
+              Зарегистрироваться
+            </button>
           </div>
         </div>
       </main>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
